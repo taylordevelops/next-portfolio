@@ -20,20 +20,40 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-
       <section className={utilStyles.headingMd}>
-        <p>👋 Hello, my name is Taylor Clark.</p>
-        <p>
-          {" "}
-          💻 I've been writing code and designing user experiences for the web
-          since I was 12 years old.{" "}
-        </p>
-        <p>
-          📚 I'm currently finishing my last 2 quarters of my B.S. in
-          Information Technology & Business Administration with a specialization
-          in Cybersecurity at Central Washington University; and seeking a
-          remote position in Web Development or Cybersecurity.
-        </p>
+        <div class="about-section">
+          <img
+            class="profile-tn"
+            src="/images/profile.jpg"
+            alt="Taylor Clark's Profile Picture"
+          />
+          <div class="intro">
+            <ul>
+              <li>
+                <span class="emo-icon">👋</span>
+                Hello, my name is Taylor Clark.
+              </li>
+              <li>
+                <span class="emo-icon">💻</span> I've been writing code and
+                designing user experiences for the web since I was 12 years old.
+              </li>
+              <li>
+                <span class="emo-icon">📚</span> I'm currently finishing my last
+                2 quarters of my B.S. in Information Technology & Business
+                Administration with a specialization in Cybersecurity at Central
+                Washington University; and seeking a remote position in Web
+                Development or Cybersecurity.
+              </li>
+              <li>
+                <a href="contact/">
+                  <button type="button" class="contact-button">
+                    Contact me!
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

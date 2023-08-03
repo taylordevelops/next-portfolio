@@ -25,8 +25,11 @@
     line-height: 1.5;
   }
   
-  .borderCircle {
-    border-radius: 9999px;
+  .topLogo {
+    margin: 0 auto;
+	  transition: all 1.9s ease-out;
+    border: 1rem solid transparent;
+    filter: drop-shadow(0 0 1rem #FFFFFF);
   }
   
   .colorInherit {
@@ -50,3 +53,46 @@
   .lightText {
     color: #666;
   }
+
+/* Top Logo */
+.topLogo {
+  margin: 0 auto;
+  transition: all 1.9s ease-out;
+  border: 1rem solid transparent;
+  filter: drop-shadow(0 0 1rem #FFFFFF);
+}
+/*
+div.top-logo:hover {
+transition: all 3.8s ease-in;
+transform: rotate(360deg);
+transition-delay: 0.1s;
+}
+*/
+.logoTextWrapper{
+max-width: 53rem;
+margin: 0 auto;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+
+padding: 1rem;
+border-radius: 1rem 1rem 0 0;
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
+
+}
+.logoTextFlex{
+line-height: 2rem;
+}
+.logoText{
+color: var(--logo-text-color);
+font-size: 2rem;
+text-align: center;
+
+text-shadow: 0 0 6rem var(--main-bg-color);
+}
+.logoSubtext{
+color: var(--logo-text-color);
+text-shadow: 0 0 6rem var(--main-bg-color);
+}
+/* End Top Logo */
