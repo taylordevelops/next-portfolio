@@ -5,6 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import AddStar from "../components/AddStar";
 import StarLoop from "../components/StarLoop";
+import ToggleSwitch from "../components/ToggleSwitch";
 
 const name = "Taylor Clark";
 const subText = "Web Development, Cybersecurity";
@@ -13,7 +14,7 @@ export const siteTitle = "Taylor Clark - Web Development, Cybersecurity";
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      <div id="starbox"></div>
+      <div className="starBox"></div>
       <Head>
         <link rel="icon" href="/favicon.png" />
         <meta
@@ -76,10 +77,10 @@ export default function Layout({ children, home }) {
           </Link>
         </ul>
 
-        <div class="theme-switch-wrapper" title="Toggle Dark/Light Mode">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" checked />
-            <div class="slider round"></div>
+        <div className="themeSwitchWrapper" title="Toggle Dark/Light Mode">
+          <label className="themeSwitch" htmlFor="checkbox">
+            <input type="checkbox" id="checkbox" defaultChecked />
+            <div className="slider round"></div>
           </label>
         </div>
       </nav>

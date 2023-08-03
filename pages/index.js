@@ -21,32 +21,32 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <div class="about-section">
+        <div className="aboutSection">
           <img
-            class="profile-tn"
+            className="profileTn"
             src="/images/profile.jpg"
             alt="Taylor Clark's Profile Picture"
           />
-          <div class="intro">
+          <div className="intro">
             <ul>
               <li>
-                <span class="emo-icon">👋</span>
+                <span className="emoIcon">👋</span>
                 Hello, my name is Taylor Clark.
               </li>
               <li>
-                <span class="emo-icon">💻</span> I've been writing code and
+                <span className="emoIcon">💻</span> I've been writing code and
                 designing user experiences for the web since I was 12 years old.
               </li>
               <li>
-                <span class="emo-icon">📚</span> I'm currently finishing my last
-                2 quarters of my B.S. in Information Technology & Business
+                <span className="emoIcon">📚</span> I'm currently finishing my
+                last 2 quarters of my B.S. in Information Technology & Business
                 Administration with a specialization in Cybersecurity at Central
                 Washington University; and seeking a remote position in Web
                 Development or Cybersecurity.
               </li>
               <li>
                 <a href="contact/">
-                  <button type="button" class="contact-button">
+                  <button type="button" className="contactButton">
                     Contact me!
                   </button>
                 </a>
