@@ -6,6 +6,8 @@ import Link from "next/link";
 import AddStar from "../components/AddStar";
 import StarLoop from "../components/StarLoop";
 import ToggleSwitch from "../components/ToggleSwitch";
+import SvgLogo from "../components/SvgLogo";
+import FillSwitch from "../components/FillSwitch";
 
 const name = "Taylor Clark";
 const subText = "Web Development, Cybersecurity";
@@ -16,7 +18,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <div className="starBox"></div>
       <Head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.svg" />
         <meta
           name="description"
           content="Web Development portfolio of Taylor Clark"
@@ -26,39 +28,11 @@ export default function Layout({ children, home }) {
       </Head>
 
       <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/tcicon-light.png"
-              className={utilStyles.topLogo}
-              height={113}
-              width={107}
-              alt="Taylor Clark Logo"
-            />
-            <div className={utilStyles.logoText}>{name}</div>
-            <div className={utilStyles.logoSubText}>{subText}</div>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/tcicon-light.png"
-                className={utilStyles.topLogo}
-                height={113}
-                width={107}
-                alt="Taylor Clark Logo"
-              />
-            </Link>
-            <div className={utilStyles.logoText}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </div>
-            <div className={utilStyles.logoSubText}>{subText}</div>
-          </>
-        )}
+        <>
+          <SvgLogo />
+          <div className={utilStyles.logoText}>{name}</div>
+          <div className={utilStyles.logoSubtext}>{subText}</div>
+        </>
       </header>
 
       <nav className="mainNav">
@@ -77,12 +51,12 @@ export default function Layout({ children, home }) {
           </Link>
         </ul>
 
-        <div className="themeSwitchWrapper" title="Toggle Dark/Light Mode">
+        {/*         <div className="themeSwitchWrapper" title="Toggle Dark/Light Mode">
           <label className="themeSwitch" htmlFor="checkbox">
             <input type="checkbox" id="checkbox" defaultChecked />
             <div className="slider round"></div>
           </label>
-        </div>
+        </div> */}
       </nav>
 
       <main>{children}</main>

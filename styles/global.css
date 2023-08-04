@@ -20,6 +20,7 @@
 
     --profile-border-color: rgba( 255, 255, 255, 0.1 );
 
+
     --slider-bg-color: rgba(207,214,215,1);
     --slider-before-bg-color: rgba(128,141,142,1);
     --slider-checked-bg-color: #161616;
@@ -41,7 +42,7 @@
     --background-p5-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000616', endColorstr='#14141e',GradientType=0 ); /* IE6-9 */
 
     }
-[data-theme="dark"]{
+  [data-theme="dark"]{
     --logo-text-color: rgba(207,214,215,1);
     --nav-bg-color: rgba(207,214,215,1);
     --nav-text-color: #161616;
@@ -49,6 +50,7 @@
     --banner-text-color: rgba(207,214,215,1);
 
     --profile-border-color: rgba( 255, 255, 255, 0.1 );
+
 
     --article-text-color: rgba(207,214,215,1);
     --slider-bg-color: rgba(207,214,215,1);
@@ -61,7 +63,7 @@
     --link-a-hover:  #6EB5FF;
     --link-a-active:  #6EB5FF;
     
-    --logo: url(/images/tcicon-light.png);
+
 
     --background-p1: rgb(0,6,22); /* Old browsers */
     --background-p2: -moz-linear-gradient(top,  rgba(0,6,22,1) 0%, rgba(1,44,69,1) 89%, rgba(20,20,30,1) 100%); /* FF3.6-15 */
@@ -81,6 +83,7 @@
 
     --profile-border-color: rgba( 0, 0, 0, 0.05 );
 
+
     --article-text-color: #161616;
     --slider-bg-color: rgba(207,214,215,1);
     --slider-before-bg-color: rgba(128,141,142,1);
@@ -92,7 +95,7 @@
     --link-a-hover:  #6EB5FF;
     --link-a-active:  #6EB5FF;
 
-    --logo: url(/images/tcicon.png);
+
 
     /* Main Background Gradients */
     --background-p1: rgb(255, 255, 255); /* Old browsers */
