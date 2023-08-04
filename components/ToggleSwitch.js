@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
     document.documentElement.setAttribute("data-theme", currentTheme);
 
     if (currentTheme === "dark") {
-      toggleSwitch.checked = true;
+      toggleSwitch.checked = false;
     }
   }
 
@@ -24,10 +24,10 @@ if (typeof window !== "undefined") {
     }
   }
 
-  toggleSwitch.addEventListener("change", switchTheme, false);
+  toggleSwitch.addEventListener("change", switchTheme, true);
 
   if (currentTheme === "light") {
-    toggleSwitch.checked = false;
+    toggleSwitch.checked = true;
   }
 
   /* End Dark/Light Mode Toggle */
